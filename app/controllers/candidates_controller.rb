@@ -11,8 +11,7 @@ class CandidatesController < ApplicationController
     @candidate = Candidate.new(candidate_finish)
 
     if @candidate.save
-      flash[:notice] = "新增候選人成功!"
-      redirect_to candidates_path
+      redirect_to candidates_path, notice: "新增候選人成功!"
     else
       render :new
     end
@@ -35,8 +34,7 @@ class CandidatesController < ApplicationController
   def destroy
     @candidate = Candidate.find_by(id: params[:id])
     @candidate.destroy if @candidate
-    flash[:notice] = "刪除候選人成功!" 
-    redirect_to candidates_path
+    redirect_to candidates_path, notice: "刪除候選人成功!"
   end
 
   private

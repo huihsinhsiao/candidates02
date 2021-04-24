@@ -1,3 +1,15 @@
 // Place all the styles related to the candidates controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.back_to_index{
+  text-decoration: none;
+  font-size: 16px;
+  color: #000;
+  border: 1px solid rgb(182, 5, 5);
+}
+.back_to_index:hover{
+  background-color: yellow;
+}
+.add_candidate{
+  color: #f00;
+}

@@ -6,7 +6,7 @@
 
 <h1>候選人列表</h1>
 
-<%= link_to "新增候選人", new_candidate_path %>
+<%= link_to "新增候選人", new_candidate_path, class: "add_candidate" %>
 
 <table>
   <thead>
@@ -23,7 +23,7 @@
   <tbody>
     <% @candidates.each do |candidate| %>
     <tr>
-      <td><%= link_to "投給這位", "#" %></td>
+      <td><%= link_to "投！", "#" %></td>
       <td><%= candidate.name %></td>
       <td><%= candidate.age %> 歲</td>
       <td><%= candidate.party %></td>
